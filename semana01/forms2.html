@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formilario de practica</title>
+</head>
+
+<body>
+    <h1>mi primera pagina</h1>
+    <form action="">
+        <div>
+            <label for="txtNombre">ingresa tu nombre</label>
+            <input type="text" id="txtNombre" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="txtEmail">gmail</label>
+            <input type="email" id="txtEmail" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="txtEdad">edad</label>
+            <input type="number" min="10" max="98" id="txtEdad" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Fecha">fecha de nacimiento</label>
+            <input type="date" id="txtFechaNacimiento" required>
+        </div>
+
+        <br>
+        <div>
+            <label for="carrera">carrera</label>
+            <select name="carrera" id="carrera">
+                <option value="">--seleccione--</option>
+                <option value="1">ingenieria</option>
+                <option value="2">informatica</option>
+                <option value="3">medicina</option>
+            </select>
+        </div>
+        <br>
+
+        <fieldset>
+            <legend>lugar de origen</legend>
+            <br>
+            <div>
+                <input type="radio" name="opcion1" id="opcion1" checked>
+                <label for="opcion1">region de valparaiso</label>
+                <br>
+                <input type="radio" name="opcion1" id="opcion2">
+                <label for="opcion2"> V region</label>
+                <br>
+                <input type="radio" name="opcion1" id="opcion3">
+                <label for="opcion3"> region de los rios</label>
+            </div>
+        </fieldset>
+        <br>
+
+        <div>
+            <input type="checkbox" name="gratuidad" id="gratuidad">
+            <label for="gratuidad">tiene gratuidad</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="comentarios">comentarios:</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="20" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
